@@ -8,7 +8,6 @@ function clearMessages() {
   document.getElementById('messages').innerHTML = '';
 }
 
-var computerMove = 'kamień';
-var playerMove = 'papier';
+var randomNumber = Math.floor(Math.random() * 9 + 11);
 
-printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to ' + playerMove + ', to wygrywasz!');
+printMessage('Wylosowana liczba to: ' + randomNumber);
