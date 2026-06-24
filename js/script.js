@@ -9,11 +9,11 @@ function clearMessages() {
 }
 
 function getMoveName(argMoveId) {
-  if (argMoveId == 1) {
+  if (argMoveId === 1) {
     return 'kamień';
-  } else if (argMoveId == 2) {
+  } else if (argMoveId === 2) {
     return 'papier';
-  } else if (argMoveId == 3) {
+  } else if (argMoveId === 3) {
     return 'nożyce';
   } else {
     printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o kamień.');
@@ -24,13 +24,13 @@ function getMoveName(argMoveId) {
 function displayResult(argPlayerMove, argComputerMove) {
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
-  if (argPlayerMove == argComputerMove) {
+  if (argPlayerMove === argComputerMove) {
     printMessage('Remis!');
-  } else if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
+  } else if (argPlayerMove === 'papier' && argComputerMove === 'kamień') {
     printMessage('Wygrywasz!');
-  } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
+  } else if (argPlayerMove === 'kamień' && argComputerMove === 'nożyce') {
     printMessage('Wygrywasz!');
-  } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
+  } else if (argPlayerMove === 'nożyce' && argComputerMove === 'papier') {
     printMessage('Wygrywasz!');
   } else {
     printMessage('Przegrywasz :(');
