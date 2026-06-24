@@ -42,9 +42,9 @@ function buttonClicked(argButtonName) {
 
   console.log(argButtonName + ' został kliknięty');
 
-  var randomNumber = Math.floor(Math.random() * 3 + 1);
-  var computerMove = getMoveName(randomNumber);
-  var playerMove = argButtonName;
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
+  const computerMove = getMoveName(randomNumber);
+  const playerMove = argButtonName;
 
   console.log('Wylosowana liczba to: ' + randomNumber);
   console.log('Ruch komputera to: ' + computerMove);
